@@ -1,0 +1,72 @@
+@import './variables.scss';
+@import './fonts.scss';
+
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    padding: $mainpadding;
+}
+
+p {
+    font-size: 1.3em;
+    padding: $mainpadding;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.foto {
+    width:100%;
+    border-radius: 0 35% 35% 0 /  0 50% 50% 0;
+}
+
+.textintro {
+    color: $colormuted;
+    margin: 3em 0;
+}
+
+aside {
+    background-color: $colormuted;
+    color: #fff;
+    padding: .5em 0;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 70em;
+        margin: 0 auto;
+
+        section {
+            display: flex;
+            margin: 4em 0;
+        }
+
+        .foto {
+            width: 48%;
+            height: auto;
+        }
+
+        .textwrapper {
+            display: flex;
+            flex-direction: column;
+            padding-left: 4em;
+        }
+
+        aside {
+            display: flex;
+            margin: 3em 0;
+
+            p {
+                padding: 0 1em;
+            }
+        }
+    }
+}

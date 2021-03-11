@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.footerListItems {
+    display: flex;
+    margin: 1em 0;
+    padding: $mainpadding;
+}
+
+.footerLink {
+    list-style-type: none;
+    
+    a {
+        text-decoration: none;
+        color: $colormuted;
+        margin-right: 1em;
+    }
+}
