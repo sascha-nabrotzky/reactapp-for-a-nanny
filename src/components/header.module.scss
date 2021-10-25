@@ -1,0 +1,39 @@
+@import "../_variables.scss";
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 2rem;
+  background-image: linear-gradient($color-dgreen, $color-green);
+
+  .textImgWrapper {
+    display: flex;
+    flex-flow: column;
+
+    .imgWrapper {
+      display: flex;
+      flex-flow: column;
+
+      .profileImg {
+        margin: 1rem auto;
+        width: 12rem;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .profileLinks {
+      justify-content: space-evenly;
+
+      .socialImg {
+        max-height: 2rem;
+      }
+    }
+  }
+
+  .profileLinks {
+    display: flex;
+  }
+}

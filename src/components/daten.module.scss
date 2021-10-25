@@ -1,0 +1,12 @@
+@import "../_variables.scss";
+
+aside {
+  display: flex;
+  justify-content: center;
+  background-color: $color-green;
+  padding: $main-padding $main-padding;
+
+  .dataWrapper {
+    max-width: $main-width;
+  }
+}

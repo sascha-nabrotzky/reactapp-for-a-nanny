@@ -1,0 +1,27 @@
+@import "./_variables.scss";
+
+.textintro {
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.foto {
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    section {
+      display: flex;
+      gap: 2rem;
+
+      .foto {
+        flex: 1;
+      }
+
+      .textwrapper {
+        flex: 1;
+      }
+    }
+  }
+}

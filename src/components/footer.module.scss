@@ -1,0 +1,16 @@
+@import "../_variables.scss";
+
+footer {
+  padding: 2rem $main-padding;
+
+  .footerListItems {
+    display: flex;
+
+    .footerLink {
+      margin-right: 2rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: $color-muted;
+    }
+  }
+}

@@ -1,27 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './footer.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import * as styles from "./footer.module.scss";
 
-function Footer() {
-
-    return (
-  
-      <>
-          <footer>
-            <ul className="footerListItems">
-                <li className="footerLink">
-                    <Link to="/impressum">Impressum</Link>
-                  </li>
-                <li className="footerLink">
-                  <Link to="/datenschutz">Datenschutz</Link>
-                </li>
-            </ul>
-          </footer>
-
-            
-      </>
-     
-    );
-  }
-  
-  export default Footer;
+export default function Footer() {
+  return (
+    <>
+      <footer>
+        <ul className={styles.footerListItems}>
+          <li>
+            <Link to="/impressum" className={styles.footerLink}>
+              Impressum
+            </Link>
+          </li>
+          <li>
+            <Link to="/datenschutz" className={styles.footerLink}>
+              Datenschutz
+            </Link>
+          </li>
+        </ul>
+      </footer>
+    </>
+  );
+}
