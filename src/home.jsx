@@ -1,13 +1,31 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Daten from "./components/daten";
 import FotoInnen from "./images/Innen_1200_web.jpg";
 import FotoBus from "./images/kitabus_1200_web.jpg";
 import FotoAussen from "./images/Aussen_1200_web.jpg";
+import socialMediaImg from "./images/LogoKitaGaensebluemchen.svg";
 import * as styles from "./home.module.scss";
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Gänseblümchen Kindertagespflege | Tagesmutter Oksana Welk</title>
+        <meta name="image" content={socialMediaImg} />
+        <meta name="twitter:image" content={socialMediaImg} />
+        <meta property="og:image" content={socialMediaImg} />
+        <meta
+          name="description"
+          content="Ich begleite das Kind liebevoll und achtsam und unterstütze es bei
+          seiner Entwicklung in Ladbergen."
+        />
+        <meta
+          name="keywords"
+          content="Tagesmutter, Tagespflege, Kindertagespflege, Kinder, Ladbergen"
+        />
+      </Helmet>
+
       <main>
         <h1>Kindertagespflege Gänseblümchen</h1>
         <blockquote className={styles.textintro}>

@@ -17,6 +17,17 @@ export default function Footer() {
               Datenschutz
             </Link>
           </li>
+          <li>
+            <a
+              href="https://sascha-nabrotzky.github.io"
+              className={styles.footerLink}
+              target="_blank"
+              rel="noreferrer"
+              title="Zur Website von Frontend-Entwickler | Sascha Nabrotzky"
+            >
+              Frontend-Entwicklung | Sascha Nabrotzky
+            </a>
+          </li>
         </ul>
       </footer>
     </>
