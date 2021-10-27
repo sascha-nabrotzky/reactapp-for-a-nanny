@@ -40,3 +40,16 @@ nav {
   margin: 0.5rem auto 0;
   max-width: 12rem;
 }
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-flow: row;
+
+    img {
+      height: 4rem;
+    }
+  }
+  .logoVisible {
+    margin: 0.5rem auto;
+  }
+}
