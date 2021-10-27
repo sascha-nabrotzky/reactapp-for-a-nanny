@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../images/LogoKitaGaensebluemchen.svg";
 import * as styles from "./navigation.module.scss";
 
 export default function Navigation() {
+  const [currentClass, setClass] = useState(`${styles.logoHidden}`);
+
+  window.addEventListener("scroll", changeClass);
+
+  function changeClass() {
+    if (window.scrollY > 200) {
+      setClass(`${styles.logoVisible}`);
+    } else if (window.scrollY < 200) {
+      setClass(`${styles.logoHidden}`);
+    }
+  }
+
   return (
     <nav>
+      <div className={currentClass}>
+        <img src={Logo} alt="Logo Kita Gänseblümchen" />
+      </div>
       <ul className={styles.navListItems}>
         <li className={styles.navItem}>
           <Link to="/">Home</Link>

@@ -1,6 +1,8 @@
 @import "../_variables.scss";
 
 nav {
+  display: flex;
+  flex-flow: column;
   position: fixed;
   width: 100%;
   top: 0;
@@ -27,4 +29,14 @@ nav {
       }
     }
   }
+}
+
+.logoHidden {
+  display: none;
+}
+
+.logoVisible {
+  display: block;
+  margin: 0.5rem auto 0;
+  max-width: 12rem;
 }
