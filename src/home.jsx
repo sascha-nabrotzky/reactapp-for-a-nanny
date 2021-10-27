@@ -1,29 +1,21 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Daten from "./components/daten";
-import FotoInnen from "./images/Innen_1200_web.jpg";
-import FotoBus from "./images/kitabus_1200_web.jpg";
-import FotoAussen from "./images/Aussen_1200_web.jpg";
-import socialMediaImg from "./images/LogoKitaGaensebluemchen.svg";
+import FotoInnen from "./images/Innen_1200_web.webp";
+import FotoBus from "./images/kitabus_1200_web.webp";
+import FotoAussen from "./images/Aussen_1200_web.webp";
+import socialMediaImg from "./images/LogoKitaGaensebluemchenSocMed.jpg";
 import * as styles from "./home.module.scss";
 
 export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Gänseblümchen Kindertagespflege | Tagesmutter Oksana Welk</title>
+        <title>Über uns | Kindertagespflege Gänseblümchen</title>
         <meta name="image" content={socialMediaImg} />
         <meta name="twitter:image" content={socialMediaImg} />
         <meta property="og:image" content={socialMediaImg} />
-        <meta
-          name="description"
-          content="Ich begleite das Kind liebevoll und achtsam und unterstütze es bei
-          seiner Entwicklung in Ladbergen."
-        />
-        <meta
-          name="keywords"
-          content="Tagesmutter, Tagespflege, Kindertagespflege, Kinder, Ladbergen"
-        />
+        <meta name="description" content="Wir stellen uns vor." />
       </Helmet>
 
       <main>
@@ -35,7 +27,7 @@ export default function Home() {
 
         <section>
           <div className={styles.foto}>
-            <img src={FotoInnen} alt="Unser Innenbereich" />
+            <img src={FotoInnen} loading="lazy" alt="Unser Innenbereich" />
           </div>
           <div className={styles.textwrapper}>
             <h2>
@@ -53,7 +45,7 @@ export default function Home() {
 
         <section>
           <div className={styles.foto}>
-            <img src={FotoBus} alt="Unser Kitabus" />
+            <img src={FotoBus} loading="lazy" alt="Unser Kitabus" />
           </div>
           <div className={styles.textwrapper}>
             <h2>
@@ -68,7 +60,7 @@ export default function Home() {
 
         <section>
           <div className={styles.foto}>
-            <img src={FotoAussen} alt="Unser Außenbereich" />
+            <img src={FotoAussen} loading="lazy" alt="Unser Außenbereich" />
           </div>
           <div className={styles.textwrapper}>
             <h2>

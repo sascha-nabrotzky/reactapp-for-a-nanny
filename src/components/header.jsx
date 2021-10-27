@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../images/LogoKitaGaensebluemchen.svg";
-import ProfileImg from "../images/Oksana_Welk.jpg";
+import ProfileImg from "../images/Oksana_Welk.webp";
 import IGLogo from "../images/IGLogo_neg.svg";
 import StepLogo from "../images/StepLogo.svg";
 import EmailSymbol from "../images/email_sym.svg";
