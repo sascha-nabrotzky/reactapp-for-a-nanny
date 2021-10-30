@@ -32,24 +32,35 @@ nav {
 }
 
 .logoHidden {
-  display: none;
+  margin: -106px auto 0;
+  max-width: 12rem;
+  transition: 0.5s ease-in-out;
 }
 
 .logoVisible {
-  display: block;
   margin: 0.5rem auto 0;
   max-width: 12rem;
+  transition: 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
   nav {
     flex-flow: row;
 
+    .navListItems {
+      margin: auto 1rem auto auto;
+    }
+
     img {
       height: 4rem;
     }
   }
+  .logoHidden {
+    margin: -106px auto auto 3rem;
+    max-width: 12rem;
+    transition: 0.5s ease-in-out;
+  }
   .logoVisible {
-    margin: 0.5rem auto;
+    margin: 0.5rem auto auto 3rem;
   }
 }
