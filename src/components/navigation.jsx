@@ -6,13 +6,11 @@ import * as styles from "./navigation.module.scss";
 export default function Navigation() {
   const [currentClass, setClass] = useState(`${styles.logoHidden}`);
 
-  window.addEventListener("scroll", changeClass);
-
-  function changeClass() {
+  window.addEventListener("scroll", () => {
     setClass(
       window.scrollY > 200 ? `${styles.logoVisible}` : `${styles.logoHidden}`
     );
-  }
+  });
 
   return (
     <nav>
