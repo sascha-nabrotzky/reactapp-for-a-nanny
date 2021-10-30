@@ -9,11 +9,9 @@ export default function Navigation() {
   window.addEventListener("scroll", changeClass);
 
   function changeClass() {
-    if (window.scrollY > 200) {
-      setClass(`${styles.logoVisible}`);
-    } else if (window.scrollY < 200) {
-      setClass(`${styles.logoHidden}`);
-    }
+    setClass(
+      window.scrollY > 200 ? `${styles.logoVisible}` : `${styles.logoHidden}`
+    );
   }
 
   return (
