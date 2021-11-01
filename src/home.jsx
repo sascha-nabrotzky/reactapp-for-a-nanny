@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Daten from "./components/daten";
+import Map from "./components/map";
 import FotoInnen from "./images/Innen_1200_web.webp";
 import FotoBus from "./images/kitabus_1200_web.webp";
 import FotoAussen from "./images/Aussen_1200_web.webp";
@@ -80,6 +81,7 @@ export default function Home() {
       </main>
 
       <Daten />
+      <Map />
     </>
   );
 }

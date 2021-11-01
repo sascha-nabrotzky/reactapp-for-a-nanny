@@ -8,5 +8,14 @@ aside {
 
   .dataWrapper {
     max-width: $main-width;
+
+    address {
+      margin-top: 3rem;
+      font-style: normal;
+    }
+
+    .addressText {
+      text-align: center;
+    }
   }
 }

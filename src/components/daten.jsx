@@ -20,6 +20,22 @@ export default function Daten() {
         <p>
           <strong>Barrierefreier Zugang: </strong>Nein
         </p>
+        <address>
+          <p className={styles.addressText}>
+            <strong>Koldefeld 11</strong> &middot; 49549 Ladbergen
+          </p>
+        </address>
+        <a
+          href="https://kitala-ladbergen.de"
+          className={styles.addressText}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>
+            Mitglied im{" "}
+            <strong>KiTaLa e.V. – Kindertagespflege Ladbergen</strong>
+          </p>
+        </a>
       </div>
     </aside>
   );
