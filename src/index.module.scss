@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  color: $color-black;
 }
 
 h1 {
@@ -19,13 +20,13 @@ p {
 
 a {
   text-decoration: none;
+  color: $color-black;
 }
 
 p,
 a,
 blockquote {
   font-size: 1.5rem;
-  color: $color-black;
 }
 
 img {

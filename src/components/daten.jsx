@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./daten.module.scss";
+import styles from "./daten.module.scss";
 
 export default function Daten() {
   return (

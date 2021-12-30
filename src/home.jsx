@@ -6,7 +6,7 @@ import FotoInnen from "./images/Innen_1200_web.webp";
 import FotoBus from "./images/kitabus_1200_web.webp";
 import FotoAussen from "./images/Aussen_1200_web.webp";
 import socialMediaImg from "./images/LogoKitaGaensebluemchenSocMed.jpg";
-import * as styles from "./home.module.scss";
+import styles from "./home.module.scss";
 
 export default function Home() {
   return (
