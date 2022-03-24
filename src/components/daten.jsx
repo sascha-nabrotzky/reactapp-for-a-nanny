@@ -22,7 +22,7 @@ export default function Daten() {
         </p>
         <address>
           <p className={styles.addressText}>
-            <strong>Koldefeld 11</strong> &middot; 49549 Ladbergen
+            <strong>Koldefeld 5</strong> &middot; 49549 Ladbergen
           </p>
         </address>
         <a
