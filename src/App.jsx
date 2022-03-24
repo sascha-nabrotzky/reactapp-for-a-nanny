@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/navigation";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -14,13 +14,13 @@ export default function App() {
     <Router>
       <Navigation />
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/tagesablauf" component={Tagesablauf} />
-        <Route path="/impressum" component={Impressum} />
-        <Route path="/datenschutz" component={Datenschutz} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tagesablauf" element={<Tagesablauf />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+      </Routes>
       <Footer />
     </Router>
   );

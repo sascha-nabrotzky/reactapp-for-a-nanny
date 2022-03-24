@@ -4,7 +4,11 @@ import ProfileImg from "../images/Oksana_Welk.webp";
 import IGLogo from "../images/IGLogo_neg.svg";
 import StepLogo from "../images/StepLogo.svg";
 import EmailSymbol from "../images/email_sym.svg";
+<<<<<<< HEAD
 import * as styles from "./header.module.scss";
+=======
+import styles from "./header.module.scss";
+>>>>>>> 853806861ba467d606a538376bf0cd347b2d8cbb
 
 export default function Header() {
   return (
