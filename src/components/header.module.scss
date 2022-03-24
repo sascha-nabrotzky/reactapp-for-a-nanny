@@ -25,10 +25,11 @@ header {
     }
 
     .profileLinks {
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       .socialImg {
-        max-height: 2rem;
+        height: 2rem;
+        width: auto;
       }
     }
   }

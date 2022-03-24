@@ -23,9 +23,14 @@ nav {
       text-transform: uppercase;
       letter-spacing: 1px;
 
+      &:hover a {
+        color: $color-green;
+      }
+
       a {
         font-size: 1.3rem;
         color: white;
+        transition: 0.2s ease-in-out;
       }
     }
   }

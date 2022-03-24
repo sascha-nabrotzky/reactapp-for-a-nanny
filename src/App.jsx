@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/navigation";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -11,7 +11,7 @@ import About from "./about";
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navigation />
       <Header />
       <Routes>
@@ -22,6 +22,6 @@ export default function App() {
         <Route path="/datenschutz" element={<Datenschutz />} />
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }

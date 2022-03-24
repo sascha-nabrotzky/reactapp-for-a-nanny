@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/LogoKitaGaensebluemchen.svg";
-<<<<<<< HEAD
-import * as styles from "./navigation.module.scss";
-=======
 import styles from "./navigation.module.scss";
->>>>>>> 853806861ba467d606a538376bf0cd347b2d8cbb
 
 export default function Navigation() {
   const [currentClass, setClass] = useState(`${styles.logoHidden}`);

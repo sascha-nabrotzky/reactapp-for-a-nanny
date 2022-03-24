@@ -17,5 +17,10 @@ aside {
     .addressText {
       text-align: center;
     }
+
+    a.addressText strong {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
   }
 }

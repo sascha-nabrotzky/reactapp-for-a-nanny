@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import * as styles from "./footer.module.scss";
-=======
 import styles from "./footer.module.scss";
->>>>>>> 853806861ba467d606a538376bf0cd347b2d8cbb
 
 export default function Footer() {
   return (
@@ -27,9 +23,9 @@ export default function Footer() {
               className={styles.footerLink}
               target="_blank"
               rel="noreferrer"
-              title="Zur Website von Frontend-Entwickler | Sascha Nabrotzky"
+              title="Zur Website von Web-Entwickler | Sascha Nabrotzky"
             >
-              Frontend-Entwicklung | Sascha Nabrotzky
+              Web-Entwicklung | Sascha Nabrotzky
             </a>
           </li>
         </ul>
